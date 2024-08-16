@@ -25,15 +25,15 @@ export default function Footer() {
               <NavLink to="/">Home</NavLink>
               <NavLink to="/about">About</NavLink>
               <NavLink to="/product">Product</NavLink>
-              <NavLink to="/contact">Contact</NavLink>
               <NavLink to="/why-us">Why Us ?</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </div>
             <div>
               <h2>Get In Touch!
               </h2>
               <div className='icon-text'>
                 <i className="fa-solid fa-phone"></i>
-                <a href='callto:3069618071'>+91 7201098768</a>
+                <a href='callto:+917201098768'>+91 7201098768</a>
               </div>
 
               <div className='icon-text'>
@@ -64,7 +64,7 @@ export default function Footer() {
       </footer>
       <div className='copy-right'>
         <div className='container'>
-          <p>Copyright © 2024 Hunter skill, All rights reserved. Powered by <a>Ekikrta</a></p>
+          <p>Copyright © 2024 Ekikrta, All rights reserved. Powered by <a>Ekikrta</a></p>
         </div>
       </div>
     </div>

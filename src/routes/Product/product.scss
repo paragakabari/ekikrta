@@ -1,0 +1,93 @@
+@import "../../../styles/mixins/index.scss";
+
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+    // For small screens
+    @include breakpoint("sm-max") {
+        padding: 5px;
+    }
+
+    .ProductTitle{
+        color: #eb651f;
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    flex-wrap: wrap; // Wrap tabs to new lines if necessary
+
+    .tab {
+        flex: 1;
+        padding: 10px 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        color: #555;
+        font-weight: bold;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            color: #eb651f;
+        }
+
+        &.active {
+            color: #eb651f;
+            border-bottom-color: #eb651f;
+        }
+
+        // For small screens
+        @include breakpoint("sm-max") {
+            flex: 1 1 100%; // Make each tab take up full width on small screens
+            padding: 8px 10px;
+            font-size: 14px;
+            text-align: start;
+            display: inline;
+        }
+    }
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f9f9f9;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        animation: fadeIn 0.3s ease-in-out;
+        p{
+            border-radius: 10px;
+            background-color:#e3e3e3;
+            padding: 15px;
+        }
+    }
+
+    // For small screens
+    @include breakpoint("sm-max") {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

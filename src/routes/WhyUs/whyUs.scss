@@ -1,0 +1,29 @@
+@import "../../../styles/mixins/index.scss";
+
+.container{
+    h1{
+        color: #eb651f;
+        padding-bottom: 30px;
+    }
+    .whyUsList{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            align-items: center;
+            transition: all ease-in-out 0.3s;
+            h3{
+                color: #eb651f;
+            }
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            }
+        }
+    }
+}

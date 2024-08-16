@@ -105,7 +105,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
+        @include breakpoint("sm-max") {
+            flex-wrap: wrap;
+            max-width: min-content;
+            gap: 20px;
+
+        }
+
         .mails-flex {
             border-radius: 10px;
             padding: 20px;
@@ -127,7 +134,7 @@
 
         a {
             color: #eb651f;
-            
+
         }
     }
 }

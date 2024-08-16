@@ -2,8 +2,12 @@
 
 .title {
     text-align: center;
-    // color: #eb651f;
     padding: 0px 0px 100px 0px;
+    color: #eb651f;
+    font-size: 35px;
+    @include breakpoint("sm-max") {
+        padding: 0px;
+    }
 }
 
 .invision-story-alignment {
