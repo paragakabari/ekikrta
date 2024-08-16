@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import './home.scss';
 import Herobanner from './herobanner';
-import SolutionSection from './solutionSection';
 import Ensuringourclients from './ensuringourclients';
 import Findingsection from './findingsection';
+import MissionVision from './MissionVisionSection';
 export default function Home() {
   useEffect(() => {
     window.scrollTo({
@@ -15,8 +15,7 @@ export default function Home() {
   return (
     <div>
       <Herobanner/>
-      <SolutionSection/>
-      <Ensuringourclients/>
+      <MissionVision />
       <Findingsection/>
     </div>
   )

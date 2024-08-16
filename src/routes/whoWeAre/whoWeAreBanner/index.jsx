@@ -1,5 +1,6 @@
 import React from 'react'
 import './whoWeAreBanner.scss';
+import { NavLink } from 'react-router-dom';
 export default function WhoWeAreBanner() {
     return (
         <div className='who-we-are-banner'>
@@ -9,10 +10,11 @@ export default function WhoWeAreBanner() {
                         Who We Are
                     </h1>
                     <p>
-                        In Vision provides recruitment, staffing, and placement services to clients throughout Canada. Utilizing our team’s combined expertise and resources, we seek out and identify qualified candidates. We analyze their strengths, conduct cultural fit assessments, and match them with the right employers.
-                    </p>
+                        Ekikrta Industries Pvt Ltd is a dynamic and rapidly growing pharmaceutical company established in 2024. Despite our young age, we have already established a robust infrastructure and a team of experienced professionals who are passionate about delivering excellence. We are committed to being a trusted partner to the pharmaceutical industry, contributing to the development of innovative and affordable healthcare solutions.
+                        As a global player, we engage in both import and export of pharmaceutical products, ensuring seamless access to our offerings across markets.
+                    </p><br />
                     <div className='button-outline'>
-                        <button>Contact Us</button>
+                        <NavLink to={"/contact"}>Contact</NavLink>
                     </div>
                 </div>
             </div>

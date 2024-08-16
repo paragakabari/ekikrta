@@ -37,6 +37,7 @@
             opacity: 0.8;
             margin: 0 0 24px 0;
             max-width: 650px;
+            text-align: justify;
             @include breakpoint("sm-max") {
                 font-size: 14px;
             }

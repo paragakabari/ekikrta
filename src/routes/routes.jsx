@@ -1,18 +1,14 @@
 import React from "react";
 import {
     createBrowserRouter,
-    RouterProvider,
-    Route,
-    Link,
+
 } from "react-router-dom";
 import DefaultLayout from "../components/defaultLayout/defaultLayout";
 import Home from "./home";
 import WhoWeAre from "./whoWeAre";
-import Employers from "./employers";
-import Jobseekers from "./jobseekers";
-import JobDetails from "./jobDetails";
 import Contact from "./contact";
-import Markets from "./markets";
+import Product from "./Product";
+import WhyUs from "./WhyUs/WhyUs";
 
 
 const router = createBrowserRouter([
@@ -21,28 +17,20 @@ const router = createBrowserRouter([
         element: <DefaultLayout><Home /></DefaultLayout> ,
     },
     {
-        path: "/who-we-are",
+        path: "/about",
         element: <DefaultLayout><WhoWeAre /></DefaultLayout> ,
     },
     {
-        path: "/employers",
-        element: <DefaultLayout><Employers /></DefaultLayout> ,
-    },
-    {
-        path: "/job-seekers",
-        element: <DefaultLayout><Jobseekers /></DefaultLayout> ,
-    },
-    {
-        path: "/job-details",
-        element: <DefaultLayout><JobDetails /></DefaultLayout> ,
+        path: "/product",
+        element: <DefaultLayout><Product /></DefaultLayout> ,
     },
     {
         path: "/contact",
         element: <DefaultLayout><Contact /></DefaultLayout> ,
     },
     {
-        path: "/markets",
-        element: <DefaultLayout><Markets /></DefaultLayout> ,
+        path: "/why-us",
+        element: <DefaultLayout><WhyUs /></DefaultLayout> ,
     },
 ]);
 

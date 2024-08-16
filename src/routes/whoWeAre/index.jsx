@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import WhoWeAreBanner from './whoWeAreBanner'
 import InvisionStory from './invisionStory'
-import Whowearesection from './whowearesection'
 import Findingsection from '../home/findingsection'
 
 export default function WhoWeAre() {
@@ -16,7 +15,6 @@ export default function WhoWeAre() {
     <div>
       <WhoWeAreBanner/>
       <InvisionStory/>
-      <Whowearesection/>
       <Findingsection/>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.scss';
-import Logo from '../../assets/logo/logo-sm.png';
+import Logo from '../../assets/logo/logo-header.png';
 import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
@@ -10,11 +10,10 @@ export default function Footer() {
         <div className='container'>
           <div className='footer-alignment'>
             <div className='first-contnet'>
-             <NavLink to="/">
-             <div className='logo'>
-                <img src={Logo} alt='Logo' />
-                <span>Hunter skill inc</span>
-              </div>
+              <NavLink to="/">
+                <div className='logo'>
+                  <img src={Logo} alt='Logo' />
+                </div>
               </NavLink>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
@@ -24,30 +23,29 @@ export default function Footer() {
             <div>
               <h2>Site Links</h2>
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/who-we-are">Who We Are</NavLink>
-              <NavLink to="/employers">Employers</NavLink>
-              <NavLink to="/job-seekers">Job Seekrs</NavLink>
-              <a>Markets</a>
+              <NavLink to="/about">About</NavLink>
+              <NavLink to="/product">Product</NavLink>
               <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/why-us">Why Us ?</NavLink>
             </div>
             <div>
               <h2>Get In Touch!
               </h2>
-              <p style={{ fontSize:'14px' , color:'#0263cc'}}>Ashish pansheriya</p>
-              <br/>
               <div className='icon-text'>
-                <i class="fa-solid fa-phone"></i>
-                <a href='callto:3069618071'>+1 (306) 961-8071</a>
+                <i className="fa-solid fa-phone"></i>
+                <a href='callto:3069618071'>+91 7201098768</a>
               </div>
-              <p style={{ fontSize:'14px' , color:'#0263cc'}}>Ashish pansheriya</p>
-              <br/>
+
               <div className='icon-text'>
-                <i class="fa-solid fa-phone"></i>
-                <a>+1 (613) 617-2133</a>
+                <i className="fa-solid fa-envelope"></i>
+                <a href='mailto:info@ekikrta.com'>info@ekikrta.com</a>
               </div>
-              <div className='icon-text'>
-                <i class="fa-solid fa-envelope"></i>
-                <a href='mailto:hunterskill@gmail.com'>hunterskill@gmail.com</a>
+              <div className='icon-text' style={{ alignItems: "start" }}>
+                <i className="fa-solid fa-location-dot"></i>
+                <p>208, 2nd floor, Gruham plaza, <br />
+                  near kosad lake garden, Kosad, <br />
+                  Surat, Gujarat, India - 394107
+                </p>
               </div>
             </div>
             <div>
@@ -55,10 +53,10 @@ export default function Footer() {
               </h2>
               <a>Get started today</a>
               <div className='social-icon-alignment'>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-twitter"></i>
               </div>
             </div>
           </div>
@@ -66,7 +64,7 @@ export default function Footer() {
       </footer>
       <div className='copy-right'>
         <div className='container'>
-          <p>Copyright © 2024 Hunter skill, All rights reserved. Powered by <a>Hunter skill inc</a></p>
+          <p>Copyright © 2024 Hunter skill, All rights reserved. Powered by <a>Ekikrta</a></p>
         </div>
       </div>
     </div>

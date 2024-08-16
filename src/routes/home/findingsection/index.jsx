@@ -12,7 +12,7 @@ export default function Findingsection() {
             mattis, pulvinar dapibus leo.
         </p>
         <div className='button-outline'>
-            <button>Get Started</button>
+            <a>Get Started</a>
         </div>
       </div>
     </div>

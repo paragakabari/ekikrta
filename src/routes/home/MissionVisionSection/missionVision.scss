@@ -1,0 +1,81 @@
+@import '../../../../styles/mixins/index.scss';
+
+$accordion-background-hover: #eb651f;
+$accordion-content-background: #fff;
+$transition-duration: 0.3s;
+$font-size-title: 18px;
+$font-size-content: 14px;
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    @include breakpoint("sm-max") {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .grid-items {
+       
+
+        .img {
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                height: 250px;
+
+                @include breakpoint("sm-max") {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 4px;
+
+    .accordion-item {
+        .accordion-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            padding-bottom: 0px;            
+            cursor: pointer;
+            font-size: $font-size-title;
+            font-weight: bold;
+            transition: background-color $transition-duration ease, color $transition-duration ease;
+
+            &:hover {
+                color: $accordion-background-hover;
+            }
+
+            &.active {
+                color: $accordion-background-hover;
+            }
+        }
+
+        .accordion-content {
+            overflow: hidden;
+            transition: max-height $transition-duration ease;
+            max-height: 0;
+            padding: 0 20px;
+            background-color: $accordion-content-background;
+
+            p {
+                color: rgb(133, 133, 133);
+                padding: 10px 0;
+                margin: 0;
+                font-size: $font-size-content;
+                line-height: 1.5;
+            }
+        }
+    }
+}

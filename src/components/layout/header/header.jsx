@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './header.scss';
-import Logo from '../../../assets/logo/logo-sm.png';
+import Logo from '../../../assets/logo/logo-header.png';
 import { NavLink } from 'react-router-dom';
 export default function Header() {
   const [ header , setHeader ] = useState(false);
@@ -12,19 +12,18 @@ export default function Header() {
             <NavLink to="/">
               <div className='logo'>
                 <img src={Logo} alt='logo' />
-                <span>Hunter skill inc</span>
+                
               </div>
             </NavLink>
             <div className='menu'>
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/who-we-are">Who We Are</NavLink>
-              <NavLink to="/employers">Employers</NavLink>
-              <NavLink to="/job-seekers">Job Seekrs</NavLink>
-              <a>Markets</a>
+              <NavLink to="/product">Product</NavLink>
+              <NavLink to="/about">About</NavLink>
               <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/why-us">Why Us ?</NavLink>
             </div>
             <div className='mobile-menu' onClick={()=> setHeader(!header)}>
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             </div>
           </div>
         </div>
@@ -33,17 +32,16 @@ export default function Header() {
         <div className='header-sm'>
           <div className='logo' onClick={()=> setHeader(false)}>
             <img src={Logo} alt='logo' />
-            <span>Hunter skill inc</span>
+            <span>Ekikrta</span>
           </div>
-          <i class="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-xmark"></i>
         </div>
         <div className='header-body'>
         <NavLink onClick={()=> setHeader(false)} to="/">Home</NavLink>
-              <NavLink onClick={()=> setHeader(false)} to="/who-we-are">Who We Are</NavLink>
-              <NavLink onClick={()=> setHeader(false)} to="/employers">Employers</NavLink>
-              <NavLink onClick={()=> setHeader(false)} to="/job-seekers">Job Seekrs</NavLink>
-              <a onClick={()=> setHeader(false)}>Markets</a>
+              <NavLink onClick={()=> setHeader(false)} to="/product">Product</NavLink>
+              <NavLink onClick={()=> setHeader(false)} to="/about">About</NavLink>
               <NavLink onClick={()=> setHeader(false)} to="/contact">Contact</NavLink>
+              <NavLink onClick={()=> setHeader(false)} to="/why-us">Why Us ?</NavLink>
         </div>
       </div>
     </>

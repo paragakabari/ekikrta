@@ -12,6 +12,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 100px;
+
         @include breakpoint("sm-max") {
             grid-template-columns: 1fr;
             gap: 40px;
@@ -29,6 +30,7 @@
                     line-height: 44px;
                 }
             }
+
             p {
                 font-size: 16px;
                 line-height: 30px;
@@ -40,6 +42,7 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 20px;
                 padding: 0 0 20px 0;
+
                 @include breakpoint("sm-max") {
                     grid-template-columns: 1fr;
                 }
@@ -69,9 +72,10 @@
                     border: 1px solid #e0e0e0;
                     transition: 0.3s ease-in-out;
                     border-radius: 6px;
+
                     &:focus {
                         outline: none;
-                        border: 1px solid #0263cc;
+                        border: 1px solid #eb651f;
                     }
                 }
 
@@ -86,12 +90,44 @@
                     border: 1px solid #e0e0e0;
                     transition: 0.3s ease-in-out;
                     border-radius: 6px;
+
                     &:focus {
                         outline: none;
-                        border: 1px solid #0263cc;
+                        border: 1px solid #eb651f;
                     }
                 }
             }
+        }
+    }
+
+    .contect-mails {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .mails-flex {
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+        i {
+            font-size: 25px;
+            color: white;
+            background-color: #eb651f;
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+        a {
+            color: #eb651f;
+            
         }
     }
 }

@@ -6,7 +6,7 @@
 
 .button {
     button {
-        background-color: #0263cc;
+        background-color: #eb651f;
         padding: 8px 20px;
         font-size: 14px;
         font-weight: 600;
@@ -19,20 +19,19 @@
 }
 
 .button-outline {
-    button {
+    a {
         background-color: transparent;
         padding: 14px 40px;
         font-size: 14px;
         font-weight: 500;
         color: #fff;
         border-radius: 9999px;
-        border: 1px solid #0263cc;
+        border: 1px solid #eb651f;
         cursor: pointer;
         letter-spacing: 1px;
         transition: .3s ease-in-out;
-
         &:hover {
-            background-color: #0263cc;
+            background-color: #eb651f;
         }
     }
 }
