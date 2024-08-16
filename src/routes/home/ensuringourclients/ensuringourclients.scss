@@ -1,0 +1,89 @@
+@import "../../../../styles/mixins/index.scss";
+
+.ensuringourclients-section-design {
+    padding: 100px 0;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0;
+    }
+
+    .text {
+        padding: 0 0 60px 0;
+        @include breakpoint("sm-max") {
+            padding: 0 0 40px 0;
+        }
+        h2 {
+            margin: 0 0 24px 0;
+            font-size: 42px;
+            color: #050505;
+            font-weight: 700;
+            text-align: center;
+            @include breakpoint("sm-max") {
+                font-size: 32px;
+                line-height: 44px;
+            }
+            span {
+                color: #0263cc;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #777;
+            text-align: center;
+        }
+    }
+
+    .repat-grid {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+
+            @include breakpoint("sm-max") {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .grid-items {
+                .img {
+                    padding: 0 0 20px 0;
+                    img {
+                        width: 100%;
+                        height: 380px;
+                        object-fit: cover;
+                        display: block;
+
+                        @include breakpoint("sm-max") {
+                            height: 230px;
+                        }
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #777;
+                    font-weight: 500;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 14px;
+                        line-height: 26px;
+                    }
+                }
+                h3 {
+                    font-size: 24px;
+                    color: #323232;
+                    font-weight: 700;
+                    line-height: 36px;
+                    margin: 0 0 16px 0;
+
+                    @include breakpoint("sm-max") {
+                        font-size: 20px;
+                        margin: 0 0 10px 0;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

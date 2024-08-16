@@ -1,0 +1,113 @@
+@import "../../../styles/mixins/index.scss";
+
+footer {
+    padding: 100px 0 0 0;
+
+    @include breakpoint("sm-max") {
+        padding: 60px 0 0 0;
+    }
+
+    .footer-alignment {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 0 0 60px 0;
+
+        @include breakpoint("sm-max") {
+            display: grid;
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 40px;
+            padding: 0 0 40px 0;
+        }
+
+
+        .social-icon-alignment {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            i {
+            color: #0263cc;
+            cursor: pointer;
+            }
+        }
+
+        h2 {
+            color: #0263cc;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+        }
+
+        a:last-child {
+            padding: 0;
+        }
+        .icon-text {
+            display: flex;
+            align-items: center;
+            padding: 0 0 20px 0;
+            gap: 12px;
+
+            i {
+                color: #0263cc;
+            }
+        }
+        a {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #222;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            position: relative;
+            padding: 0 0 20px 0;
+        }
+
+        .first-contnet {
+            p {
+                font-size: 14px;
+                line-height: 28px;
+                color: #777777;
+                max-width: 350px;
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                padding: 0 0 30px 0;
+                cursor: pointer;
+                img {
+                    cursor: pointer;
+                    max-width: 40px;
+                }
+
+                span {
+                    color: #0263cc;
+                    display: block;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+.copy-right {
+    padding: 20px 0;
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        color: #777;
+        text-align: center;
+        font-weight: 600;
+        @include breakpoint("sm-max") {
+            font-size: 12px;
+        }
+        a {
+            color: #0263cc;
+cursor: pointer;
+        }
+    }
+}
