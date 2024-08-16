@@ -5,11 +5,10 @@ export default function Findingsection() {
     <div className='finding-banner'>
       <div className='container'>
         <h2>
-        Finding The Right Employee For The Right Employer
+        Unity in our team fuels our mission for a healthier tomorrow through collective action.
         </h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper 
-            mattis, pulvinar dapibus leo.
+        When people are united on something and they agree about it and act together. For us, Our team is united to full fill the aim of building a healthier tomorrow with integrated performance of whole team.
         </p>
         <div className='button-outline'>
             <a>Get Started</a>

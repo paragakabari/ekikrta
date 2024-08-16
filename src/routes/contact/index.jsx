@@ -19,10 +19,11 @@ export default function Contact() {
                                 Let Us Create <br /> Your Succes
                             </h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat.
-                            </p>
+            In Vision provides recruitment, staffing, and placement services to clients throughout Canada. Utilizing our team’s combined expertise and resources, we seek out and identify qualified candidates. We
+            analyze their strengths, conduct cultural fit assessments, and match them with the right employers.
+          </p>
                         </div>
+                        <form form method="post" action="mailto:email.com?subject=subject&message=message">
                         <div className='grid-items'>
                             <div className='two-col-grid'>
                                 <div className='input'>
@@ -54,6 +55,7 @@ export default function Contact() {
                                 <button>Submit Now</button>
                             </div>
                         </div>
+                        </form>
                     </div>
                     <div className='contect-mails'>
                         <div className='mails-flex'>

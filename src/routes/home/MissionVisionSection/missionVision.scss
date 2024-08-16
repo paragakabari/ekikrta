@@ -10,6 +10,7 @@ $font-size-content: 14px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+    align-items: center;
 
     @include breakpoint("sm-max") {
         grid-template-columns: 1fr;
@@ -17,8 +18,15 @@ $font-size-content: 14px;
     }
 
     .grid-items {
-       
-
+       align-items: center;
+       margin-top: 30px;
+       h2{
+        margin-bottom: 20px;
+        span {
+            color: #eb651f;
+        }
+       }
+    
         .img {
             img {
                 width: 100%;

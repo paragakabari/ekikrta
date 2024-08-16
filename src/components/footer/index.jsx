@@ -16,8 +16,7 @@ export default function Footer() {
                 </div>
               </NavLink>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-                pulvinar dapibus leo.
+              What does Ekikrta mean to you? For us, it embodies teamwork, unity, and a shared goal of building a healthier future. Join us on this journey towards a better tomorrow.
               </p>
             </div>
             <div>
@@ -53,10 +52,15 @@ export default function Footer() {
               </h2>
               <a>Get started today</a>
               <div className='social-icon-alignment'>
+                <a target='_blank' href="https://www.facebook.com/people/Ekikrta-Industries-Pvt-Ltd/61561204992668/?mibextid=ZbWKwL">
                 <i className="fa-brands fa-facebook"></i>
+                </a>
+                <a target='_blank' href="https://www.instagram.com/ekikrta_industries_pvt_ltd/?igsh=d3lhYjlhMG91M256">
                 <i className="fa-brands fa-instagram"></i>
+                </a>
+                <a target='_blank' href="https://www.linkedin.com/company/ekikrta-industries-pvt-ltd/">
                 <i className="fa-brands fa-linkedin"></i>
-                <i className="fa-brands fa-twitter"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -70,3 +74,5 @@ export default function Footer() {
     </div>
   )
 }
+
+
