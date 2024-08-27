@@ -17,7 +17,7 @@ export default function Header() {
     setTimeout(() => {
       setLoader(false); // Hide the loader after 3 seconds
       navigate(path); // Navigate to the specified path
-    }, 3000);
+    }, 2000);
   };
 
   return (
