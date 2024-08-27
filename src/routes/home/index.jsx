@@ -4,6 +4,7 @@ import Herobanner from './herobanner';
 import Ensuringourclients from './ensuringourclients';
 import Findingsection from './findingsection';
 import MissionVision from './MissionVisionSection';
+import Loader from '../../components/Loader/Loader';
 export default function Home() {
   useEffect(() => {
     window.scrollTo({
@@ -14,6 +15,7 @@ export default function Home() {
   });
   return (
     <div>
+      {/* <Loader /> */}
       <Herobanner/>
       <MissionVision />
       <Findingsection/>

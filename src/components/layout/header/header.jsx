@@ -1,26 +1,42 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './header.scss';
 import Logo from '../../../assets/logo/logo-header.png';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import Loader from "../../Loader/Loader";
+
 export default function Header() {
   const [header, setHeader] = useState(false);
+  const [loader, setLoader] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavigation = (e, path) => {
+    e.preventDefault(); // Prevent default link navigation
+    setLoader(true); // Show the loader
+    setHeader(false); // Close the mobile menu
+
+    setTimeout(() => {
+      setLoader(false); // Hide the loader after 3 seconds
+      navigate(path); // Navigate to the specified path
+    }, 3000);
+  };
+
   return (
     <>
+      {loader && <Loader />}
       <header>
         <div className='container'>
           <div className='header-alignment'>
             <NavLink to="/">
               <div className='logo'>
                 <img src={Logo} alt='logo' />
-
               </div>
             </NavLink>
             <div className='menu'>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/product">Product</NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/why-us">Why Us ?</NavLink>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/" onClick={(e) => handleNavigation(e, '/')}>Home</NavLink>
+              <NavLink to="/product" onClick={(e) => handleNavigation(e, '/product')}>Product</NavLink>
+              <NavLink to="/about" onClick={(e) => handleNavigation(e, '/about')}>About</NavLink>
+              <NavLink to="/why-us" onClick={(e) => handleNavigation(e, '/why-us')}>Why Us?</NavLink>
+              <NavLink to="/contact" onClick={(e) => handleNavigation(e, '/contact')}>Contact</NavLink>
             </div>
             <div className='mobile-menu' onClick={() => setHeader(!header)}>
               <i className="fa-solid fa-bars"></i>
@@ -39,13 +55,13 @@ export default function Header() {
           </div>
         </div>
         <div className='header-body'>
-          <NavLink onClick={() => setHeader(false)} to="/">Home</NavLink>
-          <NavLink onClick={() => setHeader(false)} to="/product">Product</NavLink>
-          <NavLink onClick={() => setHeader(false)} to="/about">About</NavLink>
-          <NavLink onClick={() => setHeader(false)} to="/why-us">Why Us ?</NavLink>
-          <NavLink onClick={() => setHeader(false)} to="/contact">Contact</NavLink>
+          <NavLink onClick={(e) => handleNavigation(e, '/')} to="/">Home</NavLink>
+          <NavLink onClick={(e) => handleNavigation(e, '/product')} to="/product">Product</NavLink>
+          <NavLink onClick={(e) => handleNavigation(e, '/about')} to="/about">About</NavLink>
+          <NavLink onClick={(e) => handleNavigation(e, '/why-us')} to="/why-us">Why Us?</NavLink>
+          <NavLink onClick={(e) => handleNavigation(e, '/contact')} to="/contact">Contact</NavLink>
         </div>
       </div>
     </>
-  )
+  );
 }
