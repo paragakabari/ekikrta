@@ -33,8 +33,8 @@ export default function Header() {
             </NavLink>
             <div className='menu'>
               <NavLink to="/" onClick={(e) => handleNavigation(e, '/')}>Home</NavLink>
-              <NavLink to="/product" onClick={(e) => handleNavigation(e, '/product')}>Product</NavLink>
               <NavLink to="/about" onClick={(e) => handleNavigation(e, '/about')}>About</NavLink>
+              <NavLink to="/product" onClick={(e) => handleNavigation(e, '/product')}>Product</NavLink>
               <NavLink to="/why-us" onClick={(e) => handleNavigation(e, '/why-us')}>Why Us?</NavLink>
               <NavLink to="/contact" onClick={(e) => handleNavigation(e, '/contact')}>Contact</NavLink>
             </div>
