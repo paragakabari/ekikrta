@@ -59,7 +59,7 @@ export default function Footer() {
 
                 <div className='icon-text'>
                   <i className="fa-solid fa-envelope"></i>
-                  <a href='mailto:info@ekikrta.com'>info@ekikrta.com</a>
+                  <a href='mailto:Info.ekikrta@gmail.com'>Info.ekikrta@gmail.com</a>
                 </div>
                 <div className='icon-text' style={{ alignItems: "start" }}>
                   <i className="fa-solid fa-location-dot"></i>

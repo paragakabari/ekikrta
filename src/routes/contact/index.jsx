@@ -62,21 +62,21 @@ export default function Contact() {
                             <i className="fa-solid fa-envelope"></i>
                             <div>
                                 <span>For Domestic Department</span><br />
-                                <a href="mailto:sales@ekikrta.com">sales@ekikrta.com</a>
+                                <a href="mailto:domestic.ekikrta@gmail.com">domestic.ekikrta@gmail.com</a>
                             </div>
                         </div>
                         <div className='mails-flex'>
                             <i className="fa-solid fa-envelope"></i>
                             <div >
                                 <span>For Export Department</span><br />
-                                <a href="mailto:export@ekikrta.com">export@ekikrta.com</a>
+                                <a href="mailto:Export.ekikrta@gmail.com">Export.ekikrta@gmail.com</a>
                             </div>
                         </div>
                         <div className='mails-flex'>
                             <i className="fa-solid fa-envelope"></i>
                             <div>
                                 <span>For Purchase Department</span><br />
-                                <a href="mailto: purchase@ekikrta.com"> purchase@ekikrta.com</a>
+                                <a href="mailto:purchase.ekikrta@gmail.com">purchase.ekikrta@gmail.com</a>
                             </div>
                         </div>
                     </div>
